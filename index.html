@@ -7,14 +7,14 @@
   <link rel="icon" type="image/png" href="./icon.png">
   <script defer src="./main.js"></script>
   <script>
-    const isElementLoaded = async selector => {
-      while ( document.querySelector(selector) === null) {
-        await new Promise( resolve =>  requestAnimationFrame(resolve) )
+    const waitForElement = async selector => {
+      while (document.querySelector(selector) === null) {
+        await new Promise(resolve =>  requestAnimationFrame(resolve))
       }
       return document.querySelector(selector);
     };
 
-    isElementLoaded('#TD-PrimaryTools-Pencil').then((elem) => {
+    waitForElement('#TD-PrimaryTools-Pencil').then((elem) => {
       elem.click()
     });
   </script>
