@@ -10,18 +10,30 @@
       margin-left: -8px;
       margin-top: -8px;
     }
+    
     #TD-Tools {
       margin-left: -16px;
       margin-top: -16px;
     }
-    kbd, #TD-MenuPanel + div + div {
+    
+    kbd,
+    #TD-MenuPanel + div + div {
       margin-right: 16px;
     }
+    
     [aria-controls="radix-:r1t:"] {
       visibility: hidden;
     }
-    #TD-MultiplayerMenuIcon, #TD-MenuItem-Preferences-Style_menu + button {
+    
+    #TD-MultiplayerMenuIcon,
+    #TD-MenuItem-Preferences-Style_menu + button {
       display: none;
+    }
+
+    [style="pointer-events: auto;"] :nth-child(3) > div,
+    [style="pointer-events: auto;"] :nth-child(4) > div,
+    [style="pointer-events: auto;"] :nth-child(6) > div {
+      width: 94%
     }
   </style>
   <script>
