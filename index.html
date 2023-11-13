@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tldraw</title>
   <link rel="icon" type="image/png" href="./icon.png">
+  <style>
+    #root {
+      margin-left: -8px;
+      margin-top: -8px;
+    }
+  </style>
   <script defer src="./main.js"></script>
   <script>
     const waitForElement = async selector => {
@@ -18,12 +24,6 @@
       elem.click()
     });
   </script>
-  <style>
-    #root {
-      margin-left: -8px;
-      margin-top: -8px;
-    }
-  </style>
 </head>
 <body>
   <div id="root"></div>
