@@ -36,6 +36,16 @@
     waitForElement('#TD-PrimaryTools-Pencil').then((elem) => {
       elem.click()
     })
+
+    window.onload = function() {
+      (new MutationObserver(function (e) {
+        if (e[0].removedNodes) {
+          try {
+            document.querySelector('[type="text/css"]').remove()
+          } catch(e) {}
+        }
+      })).observe(document.querySelector('head'), { childList: true })
+    }
   </script>
 </head>
 <body>
