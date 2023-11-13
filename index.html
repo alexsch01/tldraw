@@ -28,12 +28,20 @@
       while (document.querySelector(selector) === null) {
         await new Promise(resolve =>  requestAnimationFrame(resolve))
       }
-      return document.querySelector(selector);
-    };
+      return document.querySelector(selector)
+    }
 
     waitForElement('#TD-PrimaryTools-Pencil').then((elem) => {
       elem.click()
-    });
+
+      (new MutationObserver(function (e) {
+        if (e[0].removedNodes) {
+          try {
+            document.querySelector('[type="text/css"]').remove()
+          } catch(e) {}
+        }
+      })).observe(document.querySelector('head'), { childList: true })
+    })
   </script>
 </head>
 <body>
