@@ -24,7 +24,6 @@
       display: none;
     }
   </style>
-  <script defer src="./main.js"></script>
   <script>
     const waitForElement = async selector => {
       while (document.querySelector(selector) === null) {
@@ -47,6 +46,7 @@
       })).observe(document.querySelector('head'), { childList: true })
     }
   </script>
+  <script defer src="./main.js"></script>
 </head>
 <body>
   <div id="root"></div>
