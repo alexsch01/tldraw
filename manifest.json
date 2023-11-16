@@ -1,6 +1,5 @@
 {
   "name": "tldraw",
-  "start_url": "index.html",
   "scope": "./",
   "icons": [
     {
@@ -9,7 +8,5 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#fff",
   "display": "standalone"
 }
