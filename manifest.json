@@ -1,0 +1,6 @@
+{
+  "name": "tldraw",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone"
+}
