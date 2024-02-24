@@ -7,8 +7,26 @@
   <title>tldraw</title>
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
   <style>
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    .tldraw {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%
+    }
+
     [aria-controls="radix-:r1t:"] {
       visibility: hidden;
     }
