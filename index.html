@@ -8,8 +8,8 @@
   <link rel="manifest" href="manifest.json">
   <style>
     #root {
-      margin-left: -8px;
-      margin-top: -8px;
+      margin-left: -8px
+      margin-top: -8px
     }
 
     * {
@@ -17,16 +17,16 @@
     }
 
     [aria-controls="radix-:r1t:"] {
-      visibility: hidden;
+      visibility: hidden
     }
 
     #TD-MultiplayerMenuIcon {
-      display: none;
+      display: none
     }
   </style>
   <script>
     const waitForElement = async selector => {
-      while (document.querySelector(selector) === null) {
+      while (document.querySelector(selector) == null) {
         await new Promise(resolve =>  requestAnimationFrame(resolve))
       }
       return document.querySelector(selector)
