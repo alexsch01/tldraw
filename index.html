@@ -28,6 +28,11 @@
     }
   </style>
   <script>
+    history.pushState(null, null, location.href)
+    window.onpopstate = function () {
+      history.go(1)
+    }
+
     const waitForElement = async selector => {
       while (document.querySelector(selector) == null) {
         await new Promise(resolve => requestAnimationFrame(resolve))
