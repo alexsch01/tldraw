@@ -1,5 +1,5 @@
 const cacheName = 'cache-v1'
-const ROOT_URL = '/tldraw/'
+const ROOT_URL = './'
 const precacheResources = ['', 'icon.png', 'index.html', 'main.js', 'manifest.json'].map(elem => ROOT_URL + elem)
 
 self.addEventListener('activate', (event) => {
