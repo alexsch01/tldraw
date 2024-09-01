@@ -33,7 +33,7 @@
       history.go(1)
     }
 
-    const waitForElement = async selector => {
+    const waitForElement = async (selector) => {
       while (document.querySelector(selector) == null) {
         await new Promise(resolve => requestAnimationFrame(resolve))
       }
