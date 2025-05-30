@@ -17806,7 +17806,6 @@ function makeStyleTag() {
   var tag = document.createElement("style");
   tag.type = "text/css";
   var nonce = getNonce();
-  console.log("FUCK")
   if (nonce) {
     tag.setAttribute("nonce", nonce);
   }
@@ -34387,3 +34386,4 @@ var qpe = reactExports.memo(function({ id: e10, autofocus: t10, showPages: n10, 
 }), Qpe = H2("div", { position: "absolute", height: "100%", width: "100%", minHeight: 0, minWidth: 0, maxHeight: "100%", maxWidth: "100%", overflow: "hidden", boxSizing: "border-box", outline: "none", userSelect: "none", WebkitUserSelect: "none", "& .tl-container": { position: "absolute", top: 0, left: 0, height: "100%", width: "100%", zIndex: 1 }, "& input, textarea, button, select, label, button": { webkitTouchCallout: "none", webkitUserSelect: "none", "-webkit-tap-highlight-color": "transparent", "tap-highlight-color": "transparent" } }), eue = H2("div", { position: "absolute", top: 0, left: 0, height: "100%", width: "100%", padding: "8px 8px 0 8px", display: "flex", alignItems: "flex-start", justifyContent: "flex-start", pointerEvents: "none", zIndex: 2, "& > *": { pointerEvents: "all" } }), tue = H2("div", { flexGrow: 2 });
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(AAe, { showMultiplayerMenu: false })
+);
