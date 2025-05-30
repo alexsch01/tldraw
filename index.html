@@ -34,7 +34,8 @@
         await navigator.serviceWorker.register('./service-worker.js')
       })
     }
-    
+
+    /* HACK: prevent back button from being used (because of Android gestures) */
     history.pushState(null, null, location.href)
     window.onpopstate = function () {
       history.go(1)
