@@ -17829,6 +17829,7 @@ var stylesheetSingleton = function() {
     add: function(style) {
       if (counter == 0) {
         if (stylesheet = makeStyleTag()) {
+          style = style.replace("position: relative !important;", "")
           injectStyles(stylesheet, style);
           insertStyleTag(stylesheet);
         }
