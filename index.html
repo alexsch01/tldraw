@@ -28,6 +28,10 @@
       overscroll-behavior: none
     }
   </style>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div id="root"></div>
   <script>
     if('serviceWorker' in navigator) {
       window.addEventListener('load', async () => {
@@ -41,20 +45,7 @@
       history.go(1)
     }
 
-    const waitForElement = async (selector) => {
-      while (document.querySelector(selector) == null) {
-        await new Promise(resolve => requestAnimationFrame(resolve))
-      }
-      return document.querySelector(selector)
-    }
-
-    waitForElement('#TD-PrimaryTools-Pencil').then((elem) => {
-      elem.click()
-    })
+    document.querySelector('#TD-PrimaryTools-Pencil').click()
   </script>
-  <script defer src="main.js"></script>
-</head>
-<body>
-  <div id="root"></div>
 </body>
 </html>
